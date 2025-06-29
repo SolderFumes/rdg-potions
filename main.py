@@ -88,7 +88,7 @@ for index, berry in enumerate(possibleBerries):
     btn = tk.Button(berry_frame, image=img, text=berry, compound='top',padx=5,pady=5)
     btn.config(command=lambda b=berry, w=btn: add_berry(b,w))
 
-    btn.grid(row=index // 3, column=index % 3, padx=5, pady=5)
+    btn.grid(row=index // 4, column=index % 4, padx=5, pady=5)
 
 #potion display area
 potion_frame = tk.Frame(root)
